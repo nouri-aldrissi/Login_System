@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Login Systme</title>
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+  <div class="container-Nouri">
+ 
+    <div class="forms-container">
+      <!-- form all -->
+      <div class="signin-signup">
+
+        <!-- sign-in-form  -->
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Sign in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="inUsername" type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input id="inPassword" type="password" placeholder="Password" />
+          </div>         
+          <button type="submit" class="btn solid" onclick="login()">Login</button>
+          <p class="social-text">Or Sign in with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+        <!-- sign-in-form/  -->
+
+        <!-- sign-up-form -->
+        <form action="#" class="sign-up-form">
+          <h2  class="title">Sign up</h2>
+      
+          <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input class="form-control rounded-5" oninput="validateForm(this)" id="upUsername" type="text" placeholder="Username" />
+          </div>
+          <span id="upUsername-error" class="alert alert-danger my-2 py-2 d-none w-75" role="alert">
+              The username must start with an uppercase letter, followed by 2 to 25 lowercase letters.
+          </span> 
+      
+          <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input class="form-control rounded-5" oninput="validateForm(this)" id="upEmail" type="email" placeholder="Email" />
+          </div>
+          <span id="upEmail-error" class="alert alert-danger my-2 py-2 d-none w-75" role="alert">
+              Please provide a valid email address (e.g., user@domain.com).
+          </span> 
+      
+          <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input class="form-control rounded-5" oninput="validateForm(this)" id="upPassword" type="password" placeholder="Password"/>
+          </div>
+          <span id="upPassword-error" class="alert alert-danger my-2 py-2 d-none w-75" role="alert">
+              The password must be at least 8 characters long and contain both letters and numbers.
+          </span> 
+      
+          <button onclick="addDateLogin()" type="submit" class="btn">Sign up</button>
+          <p class="social-text">Or sign up with social platforms</p>
+      
+          <!-- social media -->
+          <div class="social-media">
+              <a href="#" class="social-icon">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                  <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                  <i class="fab fa-linkedin-in"></i>
+              </a>
+          </div>
+      </form>
+      
+      
+        <!-- sign-up-form -->
+
+      </div>
+    </div>
+
+
+    <!-- all-panels -->
+    <div class="panels-container">
+      <!-- panel   Sign up now-->
+      <div class="panel left-panel">
+       
+        <div class="content">
+          <h3>New here?</h3>
+          <p>
+            Join our community and start your journey with us. We offer exciting opportunities to develop your skills
+            and work with a creative team.
+          </p>
+          <button  onclick="clearForm()" class="btn transparent" id="sign-up-btn">
+            Sign up now
+          </button>
+        </div>
+
+        <img src="images/log.svg" class="image" alt="" />
+      </div>
+      <!-- panel   Sign up now / -->
+       
+      <!-- panel - Sign in -->
+      <div class="panel right-panel">
+        <div class="content">
+
+          <h3>Are you one of us?</h3>
+          <p>
+            Join our community today and explore the opportunities we offer. We are looking for creative and ambitious
+            individuals to become part of our team.
+          </p>
+          <button  onclick="clearForm()"  class="btn transparent" id="sign-in-btn">
+            Sign in
+          </button>
+        </div>
+        <img src="./images/register.svg" class="image" alt="" />
+      </div>
+      <!-- panel - Sign in / -->
+
+
+
+
+  <!--  (Modal-message) -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalCenterTitle">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="modalMessage" class="modal-body">
+          <p>This is a vertically centered modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+    </div>
+
+  </div>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/mine.js"></script>
+</body>
+
+</html>

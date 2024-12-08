@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.navbar {
+    background-color: #1e3a8a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;  
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffeb3b;
+}
+
+.header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.section-content {
+    margin: 20px;
+}
+
+.card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.btn-custom {
+    background-color: #ffeb3b;
+    color: #1e3a8a;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #fbc02d;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    width: 100%;  /* عرض كامل للفوتر */
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+    font-size: 1.2em;
+}
